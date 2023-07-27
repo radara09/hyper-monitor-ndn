@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hasil Kesehatan Pasien</title>
+  <link rel="stylesheet" href="checkRecord.css">
+</head>
+<body>
+  <header>
+    <h1>Hasil Kesehatan Pasien</h1>
+    <a href="./seePatients.html" class="button">Beranda</a>
+  </header>
+<form id="app_form">
+   <fieldset>
+    <h3>
+        Masukkan Nama Pasien
+      <input id="app_name" type="text">
+    </h3>
+    <input id="app_button" type="submit" value="Cek">
+   </fieldset>
+</form>
+  <main>
+    <h2>Informasi Pasien</h2>
+    <label for="nama">Nama Pasien:</label>
+    <p id="nama"></p>
+
+    <label for="umur">Umur:</label>
+    <p id="umur"></p>
+
+    <label for="sex">Sex(F/M):</label>
+    <p id="sex"></p>
+
+    <h2>Data Kesehatan</h2>
+    <label for="Diagnosis">Diagnosis:</label>
+    <p id="Diagnosis"></p>
+
+    <label for="DBP">Diastolic Blood Pressure(mmHg):</label>
+    <p id="DBP"></p>
+
+    <label for="SBP">Systolic Blood pressure(mmHg):</label>
+    <p id="SBP"></p>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Hasil Kesehatan Pasien. All rights reserved.</p>
+    <p id="recordForm"></p>
+    <p id="seeAllButton"></p>
+  </footer>
+
+  <script type="module" src="../bundle.js"></script>
+
+</body>
+</html>

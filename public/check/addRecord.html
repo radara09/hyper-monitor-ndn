@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Record</title>
+  <link rel="stylesheet" href="addRecord.css">
+</head>
+<body>
+  <header>
+    <h1>Add New Record</h1>
+  </header>
+
+  <main>
+    <h2>Tambah Rekam Medis</h2>
+    <form id="recordForm">
+        <label for="noPasien">No Pasien:</label>
+        <input type="text" id="noPasien" name="noPasien" placeholder="Masukkan nomor pasien" required>
+  
+        <label for="nama">Nama Pasien:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama pasien" required>
+        
+        <label for="umur">Umur:</label>
+        <input type="text" id="umur" name="umur" placeholder="Masukkan umur pasien" required>
+       
+        <label for="sex">Sex (F/M):</label>
+        <input type="text" id="sex" name="sex" placeholder="Masukkan jenis kelamin pasien" required>
+  
+        <label for="bmi">BMI:</label>
+        <textarea id="bmi" name="bmi" placeholder="Masukkan BMI pasien" required></textarea>
+        
+        <label for="heartRate">Heart Rate:</label>
+        <textarea id="heartRate" name="heartRate" placeholder="Masukkan denyut jantung pasien" required></textarea>
+  
+        <label for="height">Height:</label>
+        <textarea id="height" name="height" placeholder="Masukkan tinggi pasien" required></textarea>
+  
+        <label for="weight">Weight:</label>
+        <textarea id="weight" name="weight" placeholder="Masukkan berat pasien" required></textarea>
+  
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file" required>
+      <button type="submit">Simpan</button>
+      <button onclick="window.location.href = './seePatients.html';" type="button">Beranda</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tambah Rekam Medis Pasien. All rights reserved.</p>
+    <p id="app_form"></p>
+    <p id="seeAllButton"></p>
+  </footer>
+
+  <script type="module" src="../bundle.js"></script>
+</body>
+</html>

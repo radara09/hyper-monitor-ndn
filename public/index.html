@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <style>
+        .footer {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: under;
+        .footer-image {
+        float: left;
+        margin-right: 15px;
+        width: 200px; /* Sesuaikan ukuran foto dengan kebutuhan Anda */
+        height: auto;
+}
+        }
+
+        .contact-us {
+            font-size: 16px;
+            color: #555;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Hypertension Medical Record</title>
+</head>
+<body>
+    
+    <header class="header">
+        <img src="./images/navrem.png" id="logo" alt="">
+
+        <nav class="navbar">
+            <a href="#about">Home</a>
+            <a href="#services">Hypertension Medical Record</a>
+            <a href="#gallery">Informasi Hipertensi</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="icons">
+            <div id="menubar" class="fas fa-bars"></div>
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <div class="about" id="about">
+        <div class="main-about">
+            <div class="inner-about">
+                <div class="about-content">
+                    <h1>Welcome To Hypertension Medical Record</h1>
+                    <p>Stay healthy and happy.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+            <div class="inner-about">
+                <div class="inner-about-image">
+                    <img src="./images/Hp.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="our-services" id="services">
+        <div class="service-content">
+            <div class="left-service-content">
+                <h1>Hypertension Medical Record</h1>
+                <p>Through this menu, you can add and monitor the hypertension history of patients.</p>
+            </div>
+        </div>
+        <div class="main-services">
+            <div class="inner-services-content">
+                <div class="service-icon">
+                    <i class="fas fa-notes-medical"></i>
+                </div>
+                <h2>Cek Riwayat</h2>
+                <p>Health is the complete integration of body, mind, and soul. Awareness that everything we do, think, feel, and believe has an effect on our well-being.</p>
+                <a href="login.html">Cek Now</a>
+            </div>
+
+            <div class="inner-services-content">
+                <div class="service-icon">
+                    <i class="fas fa-hospital-user"></i>
+                </div>
+                <h2>Add Record</h2>
+                <p>Add the latest data to be monitored immediately and keep your health in check :)</p>
+                <a href="login.html">Cek Now</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="gallery" id="gallery">
+        <h1>Informasi Hipertensi</h1>
+        <div class="main-gallery">
+            <div class="inner-gallery">
+                <img src="./images/Ht.png" alt="">
+            </div>
+
+            <div class="inner-gallery">
+                <img src="./images/HG.png" alt="">
+            </div>
+
+            <div class="inner-gallery">
+                <img src="./images/gejala.png" alt="">
+            </div>
+        </div>
+        <a href="https://www.halodoc.com/kesehatan/hipertensi" class="learn-more-button" target="_blank">Learn More</a>
+    </div>
+
+    <div class="footer">
+        <img src="./images/navrem.png" alt="Footer Image" class="footer-image">
+        <div class="contact-us" id="contact">
+            <h3>Contact Us</h3>
+            <p>Hubungi kami untuk informasi lebih lanjut:</p>
+            <p>Email: hypermonitor.com</p>
+            <p>Telepon: 0821-3471-2561</p>
+            <p id="recordForm"></p>
+            <p id="app_form"></p>
+            <p id="seeAllButton"></p>
+
+        </div>
+    </div>
+
+    <script type="module" src="bundle.js"></script>
+</body>
+</html>

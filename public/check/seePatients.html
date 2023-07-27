@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Daftar Pasien</title>
+  <link rel="stylesheet" href="seePatients.css">
+</head>
+<body>
+    <header>
+        <h1>Cek Riwayat Pasien</h1>
+        <b><a href="../login.html">Keluar</a></b>
+        
+      </header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Beranda</a></li>
+          <li><a href="./addRecord.html">Add Record</a></li>
+          <li><a href="./checkRecord.html">Check Record</a></li>
+        </ul>
+      </nav>
+  <h1>Daftar Pasien</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>No Pasien</th>
+        <th>Nama</th>
+        <th>Umur</th>
+      </tr>
+    </thead>
+    <tbody id="dataContainer"></tbody>
+  </table>
+  <button id="seeAllButton" onclick="seeAll()">See All</button>
+  <footer>
+    <p>&copy; 2023 Cek Riwayat Pasien. All rights reserved.</p>
+    <p id="recordForm"></p>
+    <p id="app_form"></p>
+  </footer>
+
+  <script>
+    function seeAll() {};
+  </script>
+  <script type="module" src="../bundle.js"> </script>
+</body>
+</html>

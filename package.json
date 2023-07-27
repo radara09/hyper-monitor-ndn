@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "packageManager": "pnpm@8.6.3",
+  "dependencies": {
+    "@ndn/endpoint": "^0.0.20230121",
+    "@ndn/packet": "^0.0.20230121",
+    "@ndn/ws-transport": "^0.0.20230121",
+    "firebase": "^10.1.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack serve"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
