@@ -10,7 +10,7 @@ async function main() {
   const face = await WsTransport.createFace({}, "wss://hmbe.ndntel-u.my.id:9696");
   face.addRoute(new Name("/"));
   // Enable the form after connection was successful.
-  document.querySelector("#seeAllButton").addEventListener("click", seeAll);
+  document.querySelector("#seeAllButton").addEventListener("load", seeAll);
   document.querySelector("#app_form").addEventListener("submit", seeOne);
   document.querySelector("#recordForm").addEventListener("submit", submit);
 }
