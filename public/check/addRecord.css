@@ -69,8 +69,6 @@ button#homeButton {
   cursor: pointer;
 }
 
-
-
 button:hover {
   background-color: #555;
 }

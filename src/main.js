@@ -95,9 +95,11 @@ async function seeAll(evt) { //membuat fungsi async
       <td>${pasien.Nama}</td>
       <td>${pasien.Umur}</td>
   `;
+    
+  dataContainer.innerHTML = '';
 
   // Tambahkan elemen pasien ke dalam kontainer
-  // dataContainer.appendChild(pasienElement);
+  dataContainer.appendChild(pasienElement);
   });
 
 }
