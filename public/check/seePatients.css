@@ -1,118 +1,128 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
-header {
-  background-color: #b2ddd4;
-  color: #555;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#logoutButton {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #8bb7ad;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+  header {
+    background-color: #b2ddd4;
+    color: #555;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-#logoutButton:hover {
-  background-color: #515151;
-}
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  background-color: #f4f4f4;
-}
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f4f4f4;
+  }
 
-nav ul li {
-  flex: 1;
-  text-align: center;
-  padding: 10px;
-}
+  nav ul li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
 
-nav ul li a {
-  text-decoration: none;
-  color: #555;
-  font-weight: bold;
-}
+  nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+  }
 
-main {
-  padding: 20px;
-}
+  main {
+    padding: 20px;
+  }
 
-h2 {
-  margin-top: 0;
-}
+  h2 {
+    margin-top: 0;
+  }
 
-h1 {
-  margin-left: 20px;
-}
+  h1 {
+    margin-left: 20px;
+  }
 
-label {
-  display: block;
-  margin-bottom: 10px;
-}
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
 
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #cccccce3;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-}
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
 
-b {
-  background-color: #b2ddd4;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-}
+  b {
+    background-color: #b2ddd4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
 
-button:hover {
-  background-color: #555;
-}
+  button:hover {
+    background-color: #a5a5a5;
+  }
 
-button{
-  margin-left: 20px;
-}
+  button {
+    margin-left: 20px;
+  }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  
-}
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ceefe8;
+    border: 1px solid #555
+  }
 
-th {
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #ccc;
+  thead {
+    background-color: #e5e7e7;
+  }
+  /* Atur lebar kolom "No Pasien" menjadi lebih kecil */
+  th:first-child,
+  td:first-child {
+    width: 80px; /* Ganti nilai 80px dengan ukuran yang sesuai dengan kebutuhan Anda */
+  }
 
-}
+  th {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #292828;
+    border-right: 1px solid #ccc
+    
+  }
 
-th {
-  background-color: #f4f4f4;
-}
+  td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #292828;
+    border-right: 1px solid #ccc
+    background-color #ffffff;
+  }
 
-tr{
-  margin-left: 50px;
-}
+  td:hover {
+    background-color: #f7f7f7;
+  }
 
-footer {
-  background-color: #f4f4f4;
-  padding: 20px;
-  text-align: center;
-}
+  tr {
+    border-bottom: 1px solid #292828;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f4eeee;
+  }
+
+  footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
