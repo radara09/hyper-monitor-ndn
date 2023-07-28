@@ -83,6 +83,11 @@ async function seeAll(evt) { //membuat fungsi async
   // Ambil elemen dengan ID dataContainer untuk menampilkan data
   const dataContainer = document.getElementById('dataContainer');
 
+  // Hapus semua elemen anak dari kontainer sebelumnya
+  while (dataContainer.firstChild) {
+    dataContainer.removeChild(dataContainer.firstChild);
+  }
+
   // Loop melalui data JSON dan tampilkan di dalam div
   Object.entries(jsonData).forEach(([, pasien]) => {
   // Buat elemen untuk menampilkan data pasien
@@ -96,8 +101,6 @@ async function seeAll(evt) { //membuat fungsi async
       <td>${pasien.Umur}</td>
   `;
     
-  dataContainer.innerHTML = '';
-
   // Tambahkan elemen pasien ke dalam kontainer
   dataContainer.appendChild(pasienElement);
   });
