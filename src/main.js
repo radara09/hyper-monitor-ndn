@@ -97,7 +97,7 @@ async function seeAll(evt) { //membuat fungsi async
   `;
 
   // Tambahkan elemen pasien ke dalam kontainer
-  dataContainer.appendChild(pasienElement);
+  // dataContainer.appendChild(pasienElement);
   });
 
 }

@@ -87,6 +87,11 @@ table {
 thead {
   background-color: #e5e7e7;
 }
+/* Atur lebar kolom "No Pasien" menjadi lebih kecil */
+th:first-child,
+td:first-child {
+  width: 80px; /* Ganti nilai 80px dengan ukuran yang sesuai dengan kebutuhan Anda */
+}
 
 th {
   padding: 10px;
