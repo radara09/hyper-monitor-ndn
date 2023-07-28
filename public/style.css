@@ -226,6 +226,22 @@ html{
     font-size: 1.5rem;
     line-height: 2;
 }
+a.button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #b2ddd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Garis bawah awalnya transparan */
+  }
+  
+  a.button:hover {
+    background-color: #515151;
+    border-bottom: 2px solid #515151; /* Garis bawah akan muncul saat tombol dihover */
+  }
+  
 .service-icon i{
     font-size: 4rem;
     width: 8rem;

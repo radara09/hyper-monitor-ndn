@@ -2,11 +2,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #c6dfdd;
 }
 
 header {
   background-color: #b2ddd4;
-  color: #555;
+  color: #0e0d0d;
   padding: 15px;
 }
 
@@ -28,6 +29,15 @@ nav ul li a {
   text-decoration: none;
   color: #555;
   font-weight: bold;
+}
+textarea#bmi {
+  resize: none;
+}
+
+textarea#heartRate,
+textarea#height,
+textarea#weight {
+  resize: none;
 }
 
 main {
@@ -53,7 +63,7 @@ input[type="text"], textarea {
 }
 
 button#submitButton {
-  background-color: #6db3e1;
+  background-color: #2a6fdb;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -61,7 +71,7 @@ button#submitButton {
   cursor: pointer;
 }
 button#homeButton {
-  background-color: #b2ddd4;
+  background-color: #48d6d2;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -74,7 +84,7 @@ button:hover {
 }
 
 footer {
-  background-color: #f4f4f4;
+  background-color: #b2ddd4;
   padding: 20px;
   text-align: center;
 }

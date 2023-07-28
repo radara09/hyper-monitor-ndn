@@ -12,7 +12,20 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+#logoutButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8bb7ad;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
+#logoutButton:hover {
+  background-color: #515151;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -53,7 +66,7 @@ label {
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccce3;
   border-radius: 4px;
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -69,10 +82,10 @@ b {
 }
 
 button:hover {
-  background-color: #a5a5a5;
+  background-color: #555;
 }
 
-button {
+button{
   margin-left: 20px;
 }
 
@@ -80,45 +93,22 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
-  background-color: #ceefe8;
-  border: 1px solid #555
-}
-
-thead {
-  background-color: #e5e7e7;
-}
-/* Atur lebar kolom "No Pasien" menjadi lebih kecil */
-th:first-child,
-td:first-child {
-  width: 80px; /* Ganti nilai 80px dengan ukuran yang sesuai dengan kebutuhan Anda */
+  
 }
 
 th {
   padding: 10px;
   text-align: center;
-  border-bottom: 1px solid #292828;
-  border-right: 1px solid #ccc
-  
+  border-bottom: 1px solid #ccc;
+
 }
 
-td {
-  padding: 10px;
-  text-align: center;
-  border-bottom: 1px solid #292828;
-  border-right: 1px solid #ccc
-  background-color #ffffff;
+th {
+  background-color: #f4f4f4;
 }
 
-td:hover {
-  background-color: #f7f7f7;
-}
-
-tr {
-  border-bottom: 1px solid #292828;
-}
-
-tr:nth-child(even) {
-  background-color: #f4eeee;
+tr{
+  margin-left: 50px;
 }
 
 footer {
