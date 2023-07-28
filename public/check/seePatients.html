@@ -4,7 +4,7 @@
   <title>Daftar Pasien</title>
   <link rel="stylesheet" href="seePatients.css">
 </head>
-<body>
+<body onload="seeAll()">
     <header>
         <h1>Cek Riwayat Pasien</h1>
         <b><a href="../login.html">Keluar</a></b>
@@ -28,7 +28,7 @@
     </thead>
     <tbody id="dataContainer"></tbody>
   </table>
-  <button id="seeAllButton" onload="seeAll()">See All</button>
+  <button id="seeAllButton" onclick="seeAll()">See All</button>
   <footer>
     <p>&copy; 2023 Cek Riwayat Pasien. All rights reserved.</p>
     <p id="recordForm"></p>
