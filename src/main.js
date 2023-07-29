@@ -60,7 +60,7 @@ async function seeAll(evt) { //membuat fungsi async
   
   interest.name = prefix; //membuat const baru untuk dari fungsi interest dan name
   interest.mustBeFresh = true; 
-  interest.lifetime = 1000;
+  interest.lifetime = 5000;
   interest.appParameters = encoder.encode(app); //melakukan encode packet ndn
   await interest.updateParamsDigest();
   
@@ -123,7 +123,7 @@ async function seeOne(evt) { //membuat fungsi async
   
   interest.name = prefix; //membuat const baru untuk dari fungsi interest dan name
   interest.mustBeFresh = true; 
-  interest.lifetime = 1000;
+  interest.lifetime = 5000;
   interest.appParameters = encoder.encode(app); //melakukan encode dari string ke uint8array
   await interest.updateParamsDigest();
   
@@ -187,7 +187,8 @@ async function seeOne(evt) { //membuat fungsi async
 
 async function submit(evt) { //membuat fungsi async
   evt.preventDefault();
-    // Mengambil nilai-nilai dari elemen input
+  // Mengambil nilai-nilai dari elemen input
+  const addForm = document.getElementById("recordForm");
   const noPasien = document.getElementById("noPasien").value;
   const nama = document.getElementById("nama").value;
   const umur = document.getElementById("umur").value;
@@ -224,7 +225,7 @@ async function submit(evt) { //membuat fungsi async
      
      interest.name = prefix; //membuat const baru untuk dari fungsi interest dan name
      interest.mustBeFresh = true; 
-     interest.lifetime = 1000;
+     interest.lifetime = 5000;
      interest.appParameters = encoder.encode(app); //melakukan encode packet ndn
      await interest.updateParamsDigest();
      
@@ -235,9 +236,11 @@ async function submit(evt) { //membuat fungsi async
      const rtt = Date.now() - t0;
      const dataContent = data.content;
      
-     //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
-     console.log(interest.appParameters)
-     console.log(`${rtt} ms`);
+  //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
+  alert("Data telah di input, silahkan kembali ke Beranda");
+  console.log(interest.appParameters);
+  console.log(`${rtt} ms`);
+  addForm.reset();
 }
 
 async function uploadFileAndGetDownloadURL(file) {
