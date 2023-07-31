@@ -60,7 +60,7 @@ async function seeAll(evt) { //membuat fungsi async
   
   interest.name = prefix; //membuat const baru untuk dari fungsi interest dan name
   interest.mustBeFresh = true; 
-  interest.lifetime = 5000;
+  interest.lifetime = 10000;
   interest.appParameters = encoder.encode(app); //melakukan encode packet ndn
   await interest.updateParamsDigest();
   
@@ -123,7 +123,7 @@ async function seeOne(evt) { //membuat fungsi async
   
   interest.name = prefix; //membuat const baru untuk dari fungsi interest dan name
   interest.mustBeFresh = true; 
-  interest.lifetime = 5000;
+  interest.lifetime = 10000;
   interest.appParameters = encoder.encode(app); //melakukan encode dari string ke uint8array
   await interest.updateParamsDigest();
   
@@ -225,7 +225,7 @@ async function submit(evt) { //membuat fungsi async
      
      interest.name = prefix; //membuat const baru untuk dari fungsi interest dan name
      interest.mustBeFresh = true; 
-     interest.lifetime = 5000;
+     interest.lifetime = 10000;
      interest.appParameters = encoder.encode(app); //melakukan encode packet ndn
      await interest.updateParamsDigest();
      
