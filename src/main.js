@@ -89,20 +89,23 @@ async function seeAll(evt) { //membuat fungsi async
   }
 
   // Loop melalui data JSON dan tampilkan di dalam div
+  let nomorUrut = 1;
   Object.entries(jsonData).forEach(([, pasien]) => {
   // Buat elemen untuk menampilkan data pasien
   const pasienElement = document.createElement('tr');
   pasienElement.className = 'pasien';
 
   // Tampilkan data pasien di dalam elemen yang telah dibuat
-  pasienElement.innerHTML = `
+    pasienElement.innerHTML = `
+      <td>${nomorUrut}</td>
       <td>${pasien.noPasien}</td>
       <td>${pasien.Nama}</td>
       <td>${pasien.Umur}</td>
   `;
     
   // Tambahkan elemen pasien ke dalam kontainer
-  dataContainer.appendChild(pasienElement);
+    dataContainer.appendChild(pasienElement);
+    nomorUrut++;
   });
 
 }
@@ -125,7 +128,7 @@ async function seeOne(evt) { //membuat fungsi async
   interest.mustBeFresh = true; 
   interest.lifetime = 10000;
   interest.appParameters = encoder.encode(app); //melakukan encode dari string ke uint8array
-  await interest.updateParamsDigest();
+  await interest.updateParamsDigest(); //memberikan digital signature
   
   //console.log(`ini dari ${app} dan ini dari ${interest.appParameters}`);
   //console.log(app)
