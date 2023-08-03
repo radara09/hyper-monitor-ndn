@@ -214,9 +214,6 @@ async function submit(evt) { //membuat fungsi async
       file: await uploadFileAndGetDownloadURL(file)
     };
 
-    //  const fileRecord = {file: file.name}
-    //  const allRecord = {newRecord, fileRecord}
-
      const jsonData = JSON.stringify(newRecord);
      const prefix = new Name("/data/adduser"); //membuat const baru dari id #app_prefix dari form
      const app = jsonData; //membuat const baru dari id #app_param dari form
