@@ -71,13 +71,13 @@ async function seeAll(evt) { //membuat fungsi async
   const rtt = Date.now() - t0;
 
   const dataContent = data.content;
-  console.log(dataContent)
+  // console.log(dataContent)
   console.log(`${rtt} ms`);
 
   const dataBaru = decoder.decode(dataContent);
-  console.log(dataBaru);
+  // console.log(dataBaru);
   const jsonData = JSON.parse(dataBaru);
-  console.log(jsonData);
+  // console.log(jsonData);
 
 
   // Ambil elemen dengan ID dataContainer untuk menampilkan data
@@ -138,14 +138,14 @@ async function seeOne(evt) { //membuat fungsi async
   const dataContent = data.content;
   
   //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
-  console.log(dataContent) // => datacontent masih dalam bentuk uint8array ganti ke string
+  // console.log(dataContent) // => datacontent masih dalam bentuk uint8array ganti ke string
   console.log(`${rtt} ms`);
   //tugasnya gimana ganti itu ke string terus string ke json harusnya.
      
      const dataBaru = decoder.decode(dataContent);
-     console.log(dataBaru);
+    //  console.log(dataBaru);
      const jsonData = JSON.parse(dataBaru);
-     console.log(jsonData);
+    //  console.log(jsonData);
  
      const name = jsonData.Nama;
      const age = jsonData.Umur;
@@ -154,12 +154,12 @@ async function seeOne(evt) { //membuat fungsi async
      const SBP = jsonData.SBP;
      const DBP = jsonData.DBP;
  
-     console.log(name);
-     console.log(age);
-     console.log(jk);
-     console.log(diagnosis);
-     console.log(SBP);
-     console.log(DBP);
+    //  console.log(name);
+    //  console.log(age);
+    //  console.log(jk);
+    //  console.log(diagnosis);
+    //  console.log(SBP);
+    //  console.log(DBP);
  
      // Mengakses elemen-elemen HTML dengan menggunakan ID
      const dataNama = document.getElementById('nama');
@@ -238,7 +238,7 @@ async function submit(evt) { //membuat fungsi async
      
   //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
   alert("Data telah di input, silahkan kembali ke Beranda");
-  console.log(interest.appParameters);
+  // console.log(interest.appParameters);
   console.log(`${rtt} ms`);
   addForm.reset();
 }
