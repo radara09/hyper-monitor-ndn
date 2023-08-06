@@ -70,9 +70,9 @@ async function seeAll(evt) { //membuat fungsi async
 
   const dataContent = data.content;
 
-  console.log(app);
-  console.log(interest.appParameters);
-  console.log(dataContent)
+  // console.log(app);
+  // console.log(interest.appParameters);
+  // console.log(dataContent)
   console.log(`${rtt} ms`);
 
   const dataBaru = decoder.decode(dataContent);
@@ -139,8 +139,8 @@ async function seeOne(evt) { //membuat fungsi async
   const dataContent = data.content;
   
   //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
-  console.log(app);
-  console.log(interest.appParameters) // 
+  // console.log(app);
+  // console.log(interest.appParameters) // 
   console.log(`${rtt} ms`);
   //tugasnya gimana ganti itu ke string terus string ke json harusnya.
      
@@ -240,8 +240,8 @@ async function submit(evt) { //membuat fungsi async
      
   //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
   alert("Data telah di input, silahkan kembali ke Beranda");
-  console.log(app);
-  console.log(interest.appParameters);
+  // console.log(app);
+  // console.log(interest.appParameters);
   console.log(`${rtt} ms`);
   addForm.reset();
 }
