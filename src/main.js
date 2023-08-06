@@ -1,10 +1,10 @@
 // Script.js
 
-import { AltUri, Interest, Name } from "@ndn/packet";
+import { Interest, Name } from "@ndn/packet";
 import { WsTransport } from "@ndn/ws-transport";
 import { Endpoint } from "@ndn/endpoint";
 import firebase from "./firebase-config";
-import {getStorage, ref, uploadBytesResumable, getDownloadURL, uploadBytes} from "firebase/storage"
+import { getDownloadURL } from "firebase/storage"
 
 async function main() {
   const face = await WsTransport.createFace({}, "wss://hmbe.ndntel-u.my.id:9696");
@@ -64,14 +64,15 @@ async function seeAll(evt) { //membuat fungsi async
   interest.appParameters = encoder.encode(app); //melakukan encode packet ndn
   await interest.updateParamsDigest();
   
-  //console.log(`ini dari ${app} dan ini dari ${interest.appParameters}`);
-  //console.log(app)
   const t0 = Date.now();
   const data = await endpoint.consume(interest);
   const rtt = Date.now() - t0;
 
   const dataContent = data.content;
-  // console.log(dataContent)
+
+  console.log(app);
+  console.log(interest.appParameters);
+  console.log(dataContent)
   console.log(`${rtt} ms`);
 
   const dataBaru = decoder.decode(dataContent);
@@ -138,7 +139,8 @@ async function seeOne(evt) { //membuat fungsi async
   const dataContent = data.content;
   
   //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
-  // console.log(dataContent) // => datacontent masih dalam bentuk uint8array ganti ke string
+  console.log(app);
+  console.log(interest.appParameters) // 
   console.log(`${rtt} ms`);
   //tugasnya gimana ganti itu ke string terus string ke json harusnya.
      
@@ -147,12 +149,12 @@ async function seeOne(evt) { //membuat fungsi async
      const jsonData = JSON.parse(dataBaru);
     //  console.log(jsonData);
  
-     const name = jsonData.Nama;
-     const age = jsonData.Umur;
-     const jk = jsonData.Sex;
-     const diagnosis = jsonData.Diagnosis;
-     const SBP = jsonData.SBP;
-     const DBP = jsonData.DBP;
+    //  const name = jsonData.Nama;
+    //  const age = jsonData.Umur;
+    //  const jk = jsonData.Sex;
+    //  const diagnosis = jsonData.Diagnosis;
+    //  const SBP = jsonData.SBP;
+    //  const DBP = jsonData.DBP;
  
     //  console.log(name);
     //  console.log(age);
@@ -238,7 +240,8 @@ async function submit(evt) { //membuat fungsi async
      
   //$log.textContent += `content= ${String.fromCharCode(...dataContent)}\n`; //print data respon
   alert("Data telah di input, silahkan kembali ke Beranda");
-  // console.log(interest.appParameters);
+  console.log(app);
+  console.log(interest.appParameters);
   console.log(`${rtt} ms`);
   addForm.reset();
 }
